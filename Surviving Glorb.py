@@ -92,7 +92,7 @@ def main():
     player = Player(WIDTH // 2, HEIGHT // 2)
 
     # Load your map image
-    map_image = pygame.image.load('your_map.png')
+    map_image = pygame.image.load('Background_1.png')
 
     while True:
         for event in pygame.event.get():

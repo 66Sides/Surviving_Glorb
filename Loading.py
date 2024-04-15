@@ -1,5 +1,7 @@
 import pygame
 import sys
+import time
+import subprocess
 
 # Initialize Pygame
 pygame.init()
@@ -51,6 +53,8 @@ class LoadingScreen:
     def __init__(self):
         self.font = pygame.font.Font(None, 36)
         self.loading_text = self.font.render("Loading...", True, (0, 0, 0))
+        time.sleep(5)
+        subprocess.run(["Python", "Surviving Glorb.py"])
 
     def handle_events(self, events):
         for event in events:
@@ -59,7 +63,7 @@ class LoadingScreen:
                 sys.exit()
 
     def update(self):
-        # Simulate loading by waiting for a few seconds (replace with actual loading logic)
+        # Loading
         pygame.time.delay(3000)
 
     def draw(self, screen):

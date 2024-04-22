@@ -1,5 +1,6 @@
 import pygame
 import sys
+import time
 
 # Initialize Pygame
 pygame.init()
@@ -8,6 +9,8 @@ pygame.init()
 WIDTH, HEIGHT = 1920, 1080
 FPS = 60
 
+mysound = pygame.mixer.Sound('Game Music Main Theme.ogg')
+mysound.play()
 
 # Create a player class
 class Player(pygame.sprite.Sprite):

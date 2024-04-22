@@ -53,8 +53,7 @@ class LoadingScreen:
     def __init__(self):
         self.font = pygame.font.Font(None, 36)
         self.loading_text = self.font.render("Loading...", True, (0, 0, 0))
-        time.sleep(5)
-        subprocess.run(["Python", "Surviving Glorb.py"])
+
 
     def handle_events(self, events):
         for event in events:
